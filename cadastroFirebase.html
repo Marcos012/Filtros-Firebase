@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Firebase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Cadastro de Usuários</h1>
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="number" id="idade" placeholder="Idade">
+    <input type="button" value="Cadastrar" onclick="cadastrar()" />
+    <input type="button" value="Pesquisa ordenada por idade" onclick="pesquisarOrdenarPorIdade()" />
+    <input type="button" value="Pesquisa ordenada por nome" onclick="pesquisarOrdenarPorNome()" />
+    <input type="button" value="Pesquisa filtrar por idade" onclick="pesquisarFiltrarPorIdade()" />
+    <input type="button" value="Pesquisa filtrar por nome" onclick="pesquisarFiltrarPorNome()" />
+
+    <div id="resultado">
+      <p>Consultando...</p>
+    </div>
+  </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+
+<script src="app.js"></script>
+<script src="cadastro.js"></script>
+<script src="filtros.js"></script>
+
+</html>
